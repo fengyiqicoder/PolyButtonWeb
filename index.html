@@ -34,10 +34,9 @@
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#installation">Installation</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
-            <a href="#installation" class="btn btn-primary nav-btn">Download Now</a>
+            <a href="https://github.com/your-repo" class="btn btn-primary nav-btn">Download Now</a>
         </div>
     </nav>
 
@@ -49,7 +48,7 @@
                     <h1>The Ultimate<br><span class="highlight">Polymarket Quick Bet</span> Extension</h1>
                     <p>Maximize your trading speed on prediction markets. Add 25%, 50%, 75%, and 100% quick bet buttons directly to your Polymarket bet panel.</p>
                     <div class="hero-actions">
-                        <a href="#installation" class="btn btn-primary btn-large">Get Extension <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+                        <a href="https://github.com/your-repo" class="btn btn-primary btn-large">Get Extension <i class="fa-solid fa-download" aria-hidden="true"></i></a>
                         <a href="#how-it-works" class="btn btn-secondary btn-large">View Demo</a>
                     </div>
                     <div class="disclaimer">
@@ -65,25 +64,59 @@
                             <span class="dot green"></span>
                         </div>
                         <div class="mockup-body">
-                            <div class="bet-panel">
-                                <div class="bet-header">Buy Yes</div>
-                                <div class="input-group">
-                                    <span class="currency">$</span>
-                                    <input type="text" value="100.00" disabled aria-label="Bet Amount">
-                                    <button class="btn-max">Max</button>
+                            <div class="bet-panel real-ui">
+                                <div class="bet-tabs">
+                                    <div class="tab-group">
+                                        <span class="tab active">Buy</span>
+                                        <span class="tab">Sell</span>
+                                    </div>
+                                    <div class="market-dropdown">
+                                        <span>Market</span>
+                                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                                    </div>
                                 </div>
-                                <!-- PolyButton Injected UI -->
-                                <div class="polybutton-row">
-                                    <button class="pb-btn">25%</button>
-                                    <button class="pb-btn active">50%</button>
-                                    <button class="pb-btn">75%</button>
-                                    <button class="pb-btn">100%</button>
+                                
+                                <div class="outcome-buttons">
+                                    <button class="outcome-btn yes">Up 75¢</button>
+                                    <button class="outcome-btn no">Down 26¢</button>
                                 </div>
-                                <div class="bet-summary">
-                                    <div>Shares <span>200.00</span></div>
-                                    <div>Potential return <span>$200.00</span></div>
+
+                                <div class="amount-section">
+                                    <div class="amount-header">
+                                        <div class="amount-labels">
+                                            <div class="label-primary">Amount</div>
+                                            <div class="label-secondary">Balance $45.63</div>
+                                        </div>
+                                        <div class="amount-value">$45.63</div>
+                                    </div>
+                                    
+                                    <div class="quick-add-row">
+                                        <button class="qa-btn">+$1</button>
+                                        <button class="qa-btn">+$5</button>
+                                        <button class="qa-btn">+$10</button>
+                                        <button class="qa-btn">+$100</button>
+                                        <button class="qa-btn">Max</button>
+                                    </div>
+                                    
+                                    <!-- PolyButton Injected UI -->
+                                    <div class="polybutton-row">
+                                        <button class="pb-btn">25%</button>
+                                        <button class="pb-btn">50%</button>
+                                        <button class="pb-btn">75%</button>
+                                        <button class="pb-btn active">100%</button>
+                                    </div>
                                 </div>
-                                <button class="btn-submit">Log in to Trade</button>
+
+                                <div class="summary-section">
+                                    <div class="summary-left">
+                                        <div class="win-label">To win 💸</div>
+                                        <div class="avg-price">Avg. Price 76¢ <i class="fa-regular fa-circle-question" aria-hidden="true"></i></div>
+                                    </div>
+                                    <div class="summary-right win-amount">$60.31</div>
+                                </div>
+                                
+                                <button class="btn-unavailable"><i class="fa-solid fa-globe" aria-hidden="true"></i> Unavailable</button>
+                                <div class="terms-text">By trading, you agree to the <a href="#">Terms of Use</a>.</div>
                             </div>
                         </div>
                     </div>
@@ -143,33 +176,6 @@
                         <div class="step-number">3</div>
                         <h3>Click to Size Bet</h3>
                         <p>Locate the custom percentage buttons just below the "Max" button. Click to instantly allocate your USDC balance.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="installation" class="installation">
-            <div class="container">
-                <div class="install-card">
-                    <div class="install-content">
-                        <h2>📦 Installation Guide (Developer Mode)</h2>
-                        <p>Follow these steps to install the unpacked Chrome extension:</p>
-                        <ol class="install-steps">
-                            <li>Open Chrome and navigate to: <code>chrome://extensions/</code></li>
-                            <li>Enable the <strong>"Developer mode"</strong> toggle in the top right corner.</li>
-                            <li>Click the <strong>"Load unpacked"</strong> button.</li>
-                            <li>Select the <code>PolyButton</code> folder containing the <code>manifest.json</code> file.</li>
-                            <li>Click "Select" and you're ready to trade! ✓</li>
-                        </ol>
-                        <div class="config-note">
-                            <strong>Advanced Developer Configuration:</strong>
-                            <p>You can customize the button percentages and UI colors by editing <code>content.js</code>:</p>
-                            <pre><code>const CONFIG = {
-  primaryColor: '#0393FC',
-  percentages: [25, 50, 75, 100],
-  checkInterval: 500
-};</code></pre>
-                        </div>
                     </div>
                 </div>
             </div>
