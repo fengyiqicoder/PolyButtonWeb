@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | PolyButton - Polymarket Quick Bet Extension</title>
+    <meta name="description" content="Privacy Policy for PolyButton. Learn how our Polymarket Quick Bet Extension completely respects your privacy by operating 100% locally with zero data collection.">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .privacy-content {
+            padding: 120px 0 80px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .privacy-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+        }
+        .last-updated {
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+        }
+        .privacy-section {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 32px;
+        }
+        .privacy-section h2 {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 12px;
+        }
+        .privacy-section p {
+            margin-bottom: 16px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        .privacy-section p:last-child {
+            margin-bottom: 0;
+        }
+        .privacy-section ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+            color: var(--text-muted);
+        }
+        .privacy-section li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+        .highlight-box {
+            background-color: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 24px 0;
+        }
+        .highlight-box p {
+            color: var(--text-main);
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 32px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="container nav-content">
+            <div class="logo">
+                <i class="fa-solid fa-percent logo-icon" aria-hidden="true"></i>
+                <a href="index.html" style="color: inherit;">PolyButton</a>
+            </div>
+            <a href="index.html" class="btn btn-secondary nav-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        </div>
+    </nav>
+
+    <main class="container privacy-content">
+        <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        
+        <h1>Privacy Policy</h1>
+        <div class="last-updated">Last Updated: February 24, 2026</div>
+
+        <div class="privacy-section">
+            <div class="highlight-box">
+                <p><strong>TL;DR:</strong> We do not collect, store, transmit, or sell any of your personal data. PolyButton operates entirely on your local machine.</p>
+            </div>
+        </div>
+
+        <div class="privacy-section">
+            <h2>1. Introduction</h2>
+            <p>At PolyButton ("we", "our", or "us"), your privacy is our top priority. This Privacy Policy explains how our Chrome Extension, PolyButton (the "Extension"), operates and interacts with your data when you use it on Polymarket.com.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>2. Zero Data Collection Policy</h2>
+            <p><strong>We do not collect any personal data.</strong></p>
+            <p>The PolyButton extension is designed to be a lightweight, privacy-first tool. By design, the Extension does not have a backend server or database to send information to. Specifically, we do <strong>NOT</strong>:</p>
+            <ul>
+                <li>Collect or track your browsing history.</li>
+                <li>Monitor your trading activity, bets, or portfolio size.</li>
+                <li>Access, read, or store your crypto wallet addresses or private keys.</li>
+                <li>Track your IP address, location, or device identifiers.</li>
+                <li>Use analytics software (like Google Analytics) within the extension.</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2>3. How the Extension Works</h2>
+            <p>PolyButton operates strictly as a local frontend script inside your browser. Here is exactly what the code does:</p>
+            <ul>
+                <li><strong>DOM Inspection:</strong> It continuously checks the local Polymarket webpage (DOM) to see if the betting panel is open.</li>
+                <li><strong>UI Injection:</strong> When the panel is detected, it injects custom HTML buttons (25%, 50%, 75%, 100%) into the page interface.</li>
+                <li><strong>Local Math Calculation:</strong> When you click a percentage button, the extension reads the "Max" available balance currently displayed on your screen, calculates the math locally, and inputs the result into the amount field.</li>
+            </ul>
+            <p>All of these actions happen 100% locally on your computer. No data ever leaves your browser via this extension.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>4. Third-Party Websites</h2>
+            <p>Our Extension operates on top of Polymarket.com. While our Extension does not collect any data, your interactions with Polymarket are governed by Polymarket's own Privacy Policy and Terms of Service. We are an unofficial, independent tool and have no affiliation with Polymarket.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>5. Open Source Transparency</h2>
+            <p>We believe in trust through transparency. The source code for the PolyButton extension is publicly available and readable. Because it is an unpacked extension (Developer Mode), you can inspect every line of the <code>content.js</code> file yourself to verify our zero-data-collection claims before installing.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>6. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes to our extension or for other operational, legal, or regulatory reasons. The date at the top of this policy indicates when it was last updated.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions, concerns, or feedback regarding this Privacy Policy or the PolyButton extension, please feel free to reach out to us by opening an issue on our GitHub repository or contacting the developer directly.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-percent" aria-hidden="true"></i> PolyButton
+                </div>
+                <div class="footer-info">
+                    <p>Open source under the MIT License.</p>
+                    <p>Developer: Claude Code | Last Updated: 2026-02-24</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>⚠️ Disclaimer: This is an unofficial, third-party Chrome extension. Crypto trading involves high risk. This software is provided "as is" without warranty of any kind.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyButton - Best Polymarket Quick Bet Extension | Polymarket Tools</title>
+    <meta name="description" content="Enhance your Polymarket trading with PolyButton. A free Chrome extension that adds 25%, 50%, 75%, and 100% quick bet size buttons to your Polymarket bet panel.">
+    <meta name="keywords" content="Polymarket extension, Polymarket tools, quick bet, prediction markets trading, Polymarket bet panel, crypto betting, betting tools">
+    <link rel="canonical" href="https://polybutton.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PolyButton - Polymarket Quick Bet Extension">
+    <meta property="og:description" content="Add 25%, 50%, 75%, 100% quick-set buttons to your Polymarket bet panel for faster trading execution.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="PolyButton - Polymarket Quick Bet Extension">
+    <meta property="twitter:description" content="Add 25%, 50%, 75%, 100% quick-set buttons to your Polymarket bet panel for faster trading execution.">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="container nav-content">
+            <div class="logo">
+                <i class="fa-solid fa-percent logo-icon" aria-hidden="true"></i>
+                <span>PolyButton</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#installation" class="btn btn-primary nav-btn">Download Now</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" aria-label="Hero Section">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <div class="badge">🚀 Latest Version v1.0.0 is Live</div>
+                    <h1>The Ultimate<br><span class="highlight">Polymarket Quick Bet</span> Extension</h1>
+                    <p>Maximize your trading speed on prediction markets. Add 25%, 50%, 75%, and 100% quick bet buttons directly to your Polymarket bet panel.</p>
+                    <div class="hero-actions">
+                        <a href="#installation" class="btn btn-primary btn-large">Get Extension <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+                        <a href="#how-it-works" class="btn btn-secondary btn-large">View Demo</a>
+                    </div>
+                    <div class="disclaimer">
+                        <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> 
+                        Unofficial third-party tool. Use at your own risk. Not investment advice.
+                    </div>
+                </div>
+                <div class="hero-image" aria-hidden="true">
+                    <div class="mockup-window">
+                        <div class="mockup-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="bet-panel">
+                                <div class="bet-header">Buy Yes</div>
+                                <div class="input-group">
+                                    <span class="currency">$</span>
+                                    <input type="text" value="100.00" disabled aria-label="Bet Amount">
+                                    <button class="btn-max">Max</button>
+                                </div>
+                                <!-- PolyButton Injected UI -->
+                                <div class="polybutton-row">
+                                    <button class="pb-btn">25%</button>
+                                    <button class="pb-btn active">50%</button>
+                                    <button class="pb-btn">75%</button>
+                                    <button class="pb-btn">100%</button>
+                                </div>
+                                <div class="bet-summary">
+                                    <div>Shares <span>200.00</span></div>
+                                    <div>Potential return <span>$200.00</span></div>
+                                </div>
+                                <button class="btn-submit">Log in to Trade</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose PolyButton for Polymarket?</h2>
+                    <p>Designed specifically to optimize your prediction market trading workflow.</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+                        <h3>Lightning Fast Betting</h3>
+                        <p>Say goodbye to manual calculations. Execute trades instantly with pre-set 25%, 50%, 75%, or 100% position sizing buttons.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
+                        <h3>Native UI Integration</h3>
+                        <p>Matches Polymarket's signature blue design (#0393FC) perfectly. Looks and feels like a built-in platform feature.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+                        <h3>Smart Panel Detection</h3>
+                        <p>Automatically identifies the active bet panel and seamlessly injects the quick percentage buttons in the exact right spot.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></div>
+                        <h3>Fully Responsive</h3>
+                        <p>Whether you trade on a widescreen monitor or a split-screen setup, the buttons adapt flawlessly to any screen size.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How PolyButton Works</h2>
+                    <p>Three simple steps to supercharge your prediction market execution.</p>
+                </div>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Visit Polymarket</h3>
+                        <p>Navigate to Polymarket.com and find a prediction market you want to trade on.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Open Bet Panel</h3>
+                        <p>Click "Yes" or "No" on any outcome to open the trading order book and bet panel.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Click to Size Bet</h3>
+                        <p>Locate the custom percentage buttons just below the "Max" button. Click to instantly allocate your USDC balance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation" class="installation">
+            <div class="container">
+                <div class="install-card">
+                    <div class="install-content">
+                        <h2>📦 Installation Guide (Developer Mode)</h2>
+                        <p>Follow these steps to install the unpacked Chrome extension:</p>
+                        <ol class="install-steps">
+                            <li>Open Chrome and navigate to: <code>chrome://extensions/</code></li>
+                            <li>Enable the <strong>"Developer mode"</strong> toggle in the top right corner.</li>
+                            <li>Click the <strong>"Load unpacked"</strong> button.</li>
+                            <li>Select the <code>PolyButton</code> folder containing the <code>manifest.json</code> file.</li>
+                            <li>Click "Select" and you're ready to trade! ✓</li>
+                        </ol>
+                        <div class="config-note">
+                            <strong>Advanced Developer Configuration:</strong>
+                            <p>You can customize the button percentages and UI colors by editing <code>content.js</code>:</p>
+                            <pre><code>const CONFIG = {
+  primaryColor: '#0393FC',
+  percentages: [25, 50, 75, 100],
+  checkInterval: 500
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Everything you need to know about the PolyButton extension.</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Why aren't the quick bet buttons appearing?</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ensure you are on the official Polymarket website and the extension is enabled. Try refreshing the page. The buttons only appear when a bet panel is open.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Why is nothing happening when I click a percentage?</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The Polymarket interface might still be loading, or your wallet balance hasn't synced. Wait a few seconds and try again. You can also check the browser console (F12) for troubleshooting.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can I change the default percentages (e.g., 10%, 20%)?</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! Open the extension folder, edit the <code>content.js</code> file, and modify the <code>percentages</code> array inside the <code>CONFIG</code> object to match your trading strategy.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Is this Polymarket extension safe to use?</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>100% safe. PolyButton is an open-source frontend script. It only performs local DOM manipulation to inject buttons and calculate math. It does not access, collect, or transmit your private keys, wallet data, or any sensitive information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-percent" aria-hidden="true"></i> PolyButton
+                </div>
+                <div class="footer-info">
+                    <p>Open source under the MIT License.</p>
+                    <p>Developer: Claude Code | Last Updated: 2026-02-24</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>⚠️ Disclaimer: This is an unofficial, third-party Chrome extension. Crypto trading involves high risk. This software is provided "as is" without warranty of any kind. This extension provides no financial or investment advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
